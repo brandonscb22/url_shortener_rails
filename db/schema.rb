@@ -11,8 +11,11 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_04_09_070819) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "link_histories", force: :cascade do |t|
-    t.integer "link_id", null: false
+    t.bigint "link_id", null: false
     t.string "ip"
     t.string "browser"
     t.string "platform"
