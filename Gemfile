@@ -40,6 +40,9 @@ gem "browser", require: "browser/browser"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
@@ -50,4 +53,6 @@ end
 gem 'jwt', require: true
 
 gem 'bcrypt', '~> 3.1.7'
+
+gem 'byebug'
 

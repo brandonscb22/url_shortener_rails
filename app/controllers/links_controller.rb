@@ -38,12 +38,11 @@ class LinksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
     def set_link
       @link = Link.find_by(id: params[:id], user_id: @current_user.id)
     end
 
-    # Only allow a list of trusted parameters through.
     def link_params
       params.require(:link).permit(:url, :url_generated)
     end
