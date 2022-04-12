@@ -9,12 +9,13 @@ class LinksController < ApplicationController
 
   # GET /links/1
   def show
-    render json: @link
+    link_history = LinkHistory.where( link_id: @link.id).to_a.count
+    @link = @link.attributes
+    render json: @link.merge(visits: link_history)
   end
 
   # POST /links
   def create
-    puts link_params.merge(url_generated: generate_link)
     @link = Link.create(link_params.merge(url_generated: generate_link, user_id: @current_user.id))
     if @link.save
       render json: {url_generated: ("%{BASE_URL}/"  + @link.url_generated) % ENV.to_h.symbolize_keys }, status: :created, location: @link

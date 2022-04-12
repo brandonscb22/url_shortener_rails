@@ -18,6 +18,10 @@ class UsersController < ApplicationController
     end
 
     def set_user
-      @user = User.find(params[:id])
+      if @current_user.id == params[:id].to_i
+        @user = User.find(params[:id])
+      else
+        render json: { error: 'unauthorized'}, status: :unauthorized
+      end
     end
 end

@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ccd2931-c9e1-425e-98a6-66d1a5a6f794" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/json_web_token.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/json_web_token.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/authentication_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/authentication_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/links_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/links_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/authentication_controller_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/links_controller_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/ref_controller_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/files/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/link_histories.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/links.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/mailers/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/link_history_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/link_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/user_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/link.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/link.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/authentication_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/authentication_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/links_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/links_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +46,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec/models" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Rake.spec: urlShortener">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec/models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Rails.Development: urlShortener">
     <configuration name="Development: urlShortener" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="urlShortener" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -179,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649563357137</updated>
-      <workItem from="1649563360690" duration="23401000" />
+      <workItem from="1649563360690" duration="34459000" />
     </task>
     <servers />
   </component>
@@ -187,6 +180,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/urlShortener@Development__urlShortener.rcov" NAME="Development: urlShortener Coverage Results" MODIFIED="1649740527495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="urlShortener" />
+    <SUITE FILE_PATH="coverage/urlShortener@spec__urlShortener.rcov" NAME="spec: urlShortener Coverage Results" MODIFIED="1649777573782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="urlShortener" />
+    <SUITE FILE_PATH="coverage/urlShortener@Development__urlShortener.rcov" NAME="Development: urlShortener Coverage Results" MODIFIED="1649784289693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="urlShortener" />
   </component>
 </project>
