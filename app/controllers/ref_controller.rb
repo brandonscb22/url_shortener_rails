@@ -1,8 +1,9 @@
 class RefController < ApplicationController
-  before_action :set_link, only: %i[ show ]
+  skip_before_action :authenticate_request
+  before_action :set_link
   # GET /links/1
   def show
-    browser = Browser.new("Some User Agent", accept_language: "en-us")
+    browser = Browser.new(request.headers['User-Agent'], accept_language: request.headers["Accept-Language"])
     link_history = LinkHistory.new do |lh|
       lh.link = @link
       lh.ip = request.remote_ip

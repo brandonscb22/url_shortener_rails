@@ -4,7 +4,6 @@ class LinksController < ApplicationController
   # GET /links
   def index
     @links = Link.all
-
     render json: @links
   end
 
@@ -17,7 +16,6 @@ class LinksController < ApplicationController
   def create
     puts link_params.merge(url_generated: generate_link)
     @link = Link.create(link_params.merge(url_generated: generate_link))
-
     if @link.save
       render json: {url_generated: ("%{BASE_URL}/"  + @link.url_generated) % ENV.to_h.symbolize_keys }, status: :created, location: @link
     else
